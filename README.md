@@ -15,16 +15,18 @@ https://github.com/mworkfun/ST7567A_128X32DOT_LCD
 and
 https://github.com/luetee/ST7567S_128X64_I2C
 
+Code should work for most of arduino based microcontrollers, aswell as with ESP32 microcontrollers too.
+
 ## What is working 
  - there is a support for basic letters and characters, and only one font size at the momment (size 7x8 px)
-  - additional font sizes could be added, but that will require a lot of refactoring since LCD device accepts 7 bytes pro transmition. That means, if we want to draw bigger or smaller fonts than of 7pixels high, we need to update the code completely to support that. Might be done by me in some future :)
+      - additional font sizes could be added, but that will require a lot of refactoring since LCD device accepts 7 bytes pro transmition. That means, if we want to draw bigger or smaller fonts than of 7pixels high, we need to update the code completely to support that. Might be done by me in some future :)
  - picture can be drawn, but first must be transalted into corresponding bits (this page might be used as a good tool for that: https://mischianti.org/images-to-byte-array-online-converter-cpp-arduino/)
 
 ### Datasheets
 URL https://github.com/mworkfun/ST7567A_128X32DOT_LCD/blob/main/ST7567A_V1.2b.pdf
 
-There is still a lot of work to be done here, but for start it is also not so bad. 
+There is still a lot of work to be done here, but for start it is also not so bad. I will try to update the code and features regulary as needs for my small project will also require the changes. 
 
-Feel free to use and update. 
+Feel free to use and update. I hope it will help someone.
 
 Have fun, cheers :)

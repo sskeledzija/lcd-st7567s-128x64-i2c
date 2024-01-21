@@ -209,8 +209,8 @@ void Lcd_st7567s::fontSize(int num){
  * Character display position. x=0-7, y=0-17
 *******************************************/
 void Lcd_st7567s::cursor(int x, int y){
-  // if(x>17){x=17;}
-  // if(y>7){x=7;}
+  if(x>17){x=17;}
+  if(y>7){x=7;}
   cursorInit[0]=y;
   cursorInit[1]=x;
 }
